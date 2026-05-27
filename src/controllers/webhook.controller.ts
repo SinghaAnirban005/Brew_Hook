@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { handleWebhook } from "../lib/handleWebhook";
 
 export const webhookHandler = async (req: Request, res: Response) => {
   const event_type = req.params['event_type'] as string;
