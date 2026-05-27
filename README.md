@@ -6,6 +6,10 @@ Brew Hook exposes a single endpoint (`POST /webhook/:event_type`) that accepts *
 
 No custom parsers. No field mapping config. Zero boilerplate per integration.
 
+
+<img width="1123" height="656" alt="Screenshot from 2026-05-28 03-28-21" src="https://github.com/user-attachments/assets/9371f4a6-7d67-46ed-a18a-c2d41376e53c" />
+
+
 ---
 
 ## Quick Start
