@@ -22,10 +22,6 @@ The object must have exactly these keys:
                  • "Send a payment-failed recovery email to sam@example.com whose card was declined."
 If you cannot find an email address in the payload, set "email" to "unknown@unknown.com".`;
 
-/**
- * Uses Groq (llama-3.3-70b-versatile) to extract email, name, and a
- * contextual brewPrompt from any arbitrary webhook JSON payload.
- */
 export async function parsePayload(
   eventType: string,
   rawPayload: Record<string, unknown>

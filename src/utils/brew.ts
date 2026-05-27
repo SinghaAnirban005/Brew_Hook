@@ -41,7 +41,6 @@ export async function dispatchToBrew(
   let emailHtml: string | null = null;
 
   try {
-    // Determine email type from event context (default: transactional)
     const emailType = eventType.includes('newsletter') || eventType.includes('promo')
       ? 'campaign'
       : 'transactional';

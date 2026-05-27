@@ -1,10 +1,10 @@
-import express, { Request, Response } from 'express';
-import { config } from 'dotenv';
+import express from 'express';
+import "dotenv/config"
 
 import healthRouter from "./routers/health.router"
 import webhookRouter from "./routers/webhook.router"
 
-config();
+// config();
 
 const app = express();
 app.use(express.json());
